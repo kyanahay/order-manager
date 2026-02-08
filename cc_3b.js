@@ -66,10 +66,6 @@ function processOrder(order) {
   for (const item of order.items) {
     const product = findProductBySku(item.sku);
 
-    if (!product) {
-      return `Order ${order.orderId} failed: SKU ${item.sku} not found.`;
-    }
-
     if (product.stock < item.qty) {
       const shortBy = item.qty - product.stock;
       return `Order ${order.orderId} failed: ${product.name} (${item.sku}) is short by ${shortBy} unit(s).`;
