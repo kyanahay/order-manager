@@ -33,7 +33,7 @@ inventory[0].price = 16.99; // Eco Bottle on sale
 console.log(`Sale applied: ${inventory[0].sku} new price = $${inventory[0].price.toFixed(2)}`);
 
 // Update stock of another product (restock)
-inventory[3].stock += 10; // restock Notebook Set
+inventory[3].stock += 10; // restock Notebook Set (SKU-004)
 console.log(`Restock: ${inventory[3].sku} new stock = ${inventory[3].stock}`);
 
 
