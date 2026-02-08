@@ -26,7 +26,7 @@ console.log("Added product:", inventory[inventory.length - 1]);
 
 // Remove the last product and log which item was removed
 const removed = inventory.pop();
-console.log("Removed last product with pop():", removed);
+console.log("Removed last product using pop():", removed);
 
 // Update price of one product (sale)
 inventory[0].price = 16.99; // Eco Bottle on sale
